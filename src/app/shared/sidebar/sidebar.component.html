@@ -1,0 +1,84 @@
+<!-- Sidebar-->
+<div class="bg-dark border-right p-3" id="sidebar">
+    <img src="https://i.ibb.co/VgjhV0Z/logo.png" class="aling-image" width="200px"  alt="enviar mensaje">
+    
+    <hr size="2px" color="white" />
+    <br>
+    <hr size="2px" color="white" />
+    <ul class="nav flex-column">
+      <li class="nav-item ">
+        <a class="nav-link active text-light" href="#">Perfil</a>
+        
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">Muro</a>
+        
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">Buscador de Gifs</a>
+        <hr size="2px" color="white" />
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li>
+      
+
+      
+      <h5 class="text-light"
+      >Historial de Gifs</h5>
+      <hr size="2px" color="white" />
+      
+    </ul>
+    <div class="list-group list-reset">
+      <a *ngFor="let item of historial"
+      (click)="buscar(item)" 
+      href="#" class="list-group-item list-group-item-action">
+        {{item}}
+  
+      </a>
+   
+      <hr size="2px" color="white" />
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#"></a>
+        </li>
+       
+        
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#"></a>
+          <h5 class="text-light"
+    >Emisora</h5>
+    <hr size="2px" color="white" />
+        </li>
+      </ul>
+
+      <div class="card">
+
+        
+        
+          
+          <iframe name="contenedorPlayer" class="cuadroBordeado " allow="autoplay" width="250px" height="350px" marginwidth=0 marginheight=0 hspace=0 vspace=0 frameborder=0 scrolling=no  src="https://cp.usastreams.com/pr2g/APPlayerRadioHTML5.aspx?stream=https://stream10.usastreams.com/9314/stream&fondo=05&formato=mpeg&color=14&titulo=2&autoStart=1&vol=5&tipo=5&nombre=Radio+Conejos&imagen=https://cp.usastreams.com/playerHTML5/img/cover.png&server=https://stream10.usastreams.com/status.xslCHUMILLASmount=/9316/status.xslCHUMILLASmount=/stream&opt=metadatabig"></iframe>
+          
+         
+
+        
+
+
+      </div>
+      
+       <!-- Inicio. radio hosting USAstreams.com html5 player -->
+<!-- Licencia: GRATIS-XDF4543ERF -->
+
+<!-- En players responsive puede modificar el weight a sus necesidades, Por favor no modifique el resto del codigo para poder seguir ofreciendo este servicio gratis  -->
+<!-- Fin. USAstreams.com html5 player -->
+
+    </div>
+    
+  </div>
+  <!-- Ende Sidebar-->
